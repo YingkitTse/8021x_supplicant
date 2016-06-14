@@ -1,0 +1,19 @@
+#!/bin/bash
+#用户名
+USERNAME='user'
+
+#密码
+PASSWORD='pass'
+
+#其他参数(如--dev指定网卡，可运行zdclient -h查看详细参数)
+ARGS=
+
+#---------------------------------------------------------------------
+LOGFILE=/tmp/zdclient.log
+
+echo Beginning Authentication...
+
+zdclient $@ $ARGS -b -u $USERNAME -p $PASSWORD 2>&1|tee -i "$LOGFILE"
+
+program_err=`sed -n -e '/^@@ERROR/p' $LOGFILE`
+server_info=`sed -n -e '/^>>Server/p' $LOGFILE`
