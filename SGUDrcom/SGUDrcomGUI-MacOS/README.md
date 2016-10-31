@@ -1,6 +1,12 @@
 # SGUDrcomGUI
 SGUDrcomGUI is a 3rd party Dr.COM Client for Shaoguan University based on Shindo's Project **[EasyDrcom](https://github.com/coverxit/EasyDrcom)**
 
+## Update
+本目录会在2016.10.31或更后的时间呈现给城市热点公司的开发工程师。
+因为不能直接沟通，所以我留下一点话，想告诉clone或fork或者只是watch的工程师（们）：
+
+EasyDrcomCore的模拟登录就不用看了，我们目前仍然还没解决心跳的问题。好好改进GUI吧，虽然我觉得GUI部分看了我们第三方的代码之后仍然不会有太多帮助（认真脸）。Anyway，如果能够悄悄告诉我方法，让我们自己维护也行啊！（感觉苹果大更新一次，程序就要重新用最新版xcode编译一次）
+
 ## Introduction
 Mac OS 版 SGUDrcomGUI（以下简称**本项目**）使用 XCode 6.2 (6C131e) 开发，语言为 C++（包括C++ 11的部分特性）和 Objective-C。
 
